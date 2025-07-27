@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Wallet King</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="search_transactions">Search transactions</string>
+    <string name="all_transactions">All</string>
+
+    <string name="all_time">All Time</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+    <string name="no_transactions_found">No Transactions Found</string>
+    <string name="no_transactions_description">Try adjusting your filters or add a new transaction to get started</string>
+
+
+    <!-- Navigation and tabs -->
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_transactions">Transactions</string>
+    <string name="tab_categories">Categories</string>
+
+    <!-- Dashboard strings -->
+
+    <string name="total_expenses">Total Expenses :</string>
+    <string name="monthly_overview">Monthly Overview :</string>
+    <string name="expense_breakdown">Expense Breakdown :</string>
+    <string name="current_balance">Current Balance :</string>
+    <string name="total_income">Total Income :</string>
+    <string name="total_expense">Total Expense :</string>
+
+    <!-- Transaction related strings -->
+
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="delete_transaction">Delete Transaction</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="date">Date</string>
+    <string name="type">Type</string>
+    <string name="description">Description</string>
+
+    <!-- Category related strings -->
+    <string name="add_category">Add Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="delete_category">Delete Category</string>
+
+    <!-- Dialog buttons -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+
+    <!-- Error messages -->
+    <string name="error_amount_required">Amount is required</string>
+    <string name="error_category_required">Category is required</string>
+    <string name="error_invalid_amount">Invalid amount</string>
+    <string name="error_empty_description">no description added,please add a description to continue</string>
+    <string name="error_select_category">please select a category\n</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="add_transaction_description">Add a new transaction</string>
+
+</resources>

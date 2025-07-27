@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WalletKing" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.WalletKing" parent="Base.Theme.WalletKing" />
+    <!-- res/values/styles.xml -->
+    <style name="CustomFabShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>  <!-- Makes it perfectly circular -->
+    </style>
+    <style name="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu.Dense" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <!-- Adjust the layout size and padding -->
+        <item name="android:minHeight">48dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+
+        <!-- Adjust the text size and padding -->
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense</item>
+        <item name="editTextStyle">@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense</item>
+
+        <!-- Set the proper margins -->
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+
+        <!-- Configure the dropdown menu appearance -->
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="endIconTint">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Additional supporting styles -->
+    <style name="ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+        <item name="editTextStyle">@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense</item>
+    </style>
+
+    <style name="Widget.Material3.TextInputEditText.OutlinedBox.Dense" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- Define custom theme overlay for DatePicker -->
+    <style name="ThemeOverlay.Material3.DatePicker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize text appearance (optional) -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/divider</item>
+
+        <!-- Customize background color (optional) -->
+        <item name="android:background">@color/transparent</item>
+
+
+        <!-- Customize date range and other styles (optional) -->
+
+
+    </style>
+</resources>

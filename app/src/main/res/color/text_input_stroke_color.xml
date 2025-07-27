@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Error state -->
+    <item android:state_focused="true" android:state_activated="true" android:color="@color/expense_red" />
+    <item android:state_activated="true" android:color="@color/expense_red" />
+    <!-- Normal state -->
+    <item android:state_focused="true" android:color="@color/primary_dark" />
+    <!-- Default state -->
+    <item android:color="@color/primary_dark" />
+</selector>

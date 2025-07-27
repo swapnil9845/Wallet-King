@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand colors -->
+    <color name="primary">#1976D2</color>          <!-- A professional blue -->
+    <color name="primary_dark">#1565C0</color>     <!-- Darker blue for status bar -->
+    <color name="primary_light">#42A5F5</color>    <!-- Lighter blue for accents -->
+    <color name="accent">#FF4081</color>           <!-- Pink accent for emphasis -->
+
+    <!-- Finance-specific colors -->
+    <color name="income_green">#4CAF50</color>     <!-- Green for income -->
+    <color name="expense_red">#F44336</color>      <!-- Red for expenses -->
+    <color name="savings_blue">#03A9F4</color>     <!-- Blue for savings -->
+
+    <!-- Chart colors -->
+    <color name="chart_color_1">#2196F3</color>    <!-- Blue -->
+    <color name="chart_color_2">#4CAF50</color>    <!-- Green -->
+    <color name="chart_color_3">#FFB800</color>    <!-- Amber -->
+    <color name="chart_color_4">#9C27B0</color>    <!-- Purple -->
+    <color name="chart_color_5">#FF5722</color>    <!-- Deep Orange -->
+
+    <!-- Neutral colors -->
+    <color name="text_primary">#212121</color>     <!-- Dark grey for primary text -->
+    <color name="text_secondary">#757575</color>   <!-- Medium grey for secondary text -->
+    <color name="divider">#BDBDBD</color>          <!-- Light grey for dividers -->
+    <color name="divider1">#BAA6A6A6</color>          <!-- Light grey for dividers -->
+    <color name="background">#FAFAFA</color>       <!-- Off-white background -->
+    <color name="white">#FFFFFF</color>            <!-- Pure white -->
+    <color name="black">#000000</color>
+    <color name="blue">#1746F7</color>
+    <color name="transparent">#001746F7</color>
+    <color name="md_theme_primary">#006C4C</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#84F8C7</color>
+    <color name="md_theme_onPrimaryContainer">#002114</color>
+    <color name="md_theme_secondary">#4C6358</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#CFE9DB</color>
+    <color name="md_theme_onSecondaryContainer">#092017</color>
+    <color name="md_theme_background">#FBFDF9</color>
+    <color name="md_theme_onBackground">#191C1A</color>
+    <color name="md_theme_surface">#FBFDF9</color>
+    <color name="md_theme_onSurface">#191C1A</color>
+    <color name="md_theme_surfaceVariant">#DCE5DD</color>
+    <color name="md_theme_onSurfaceVariant">#404943</color>
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onErrorContainer">#410002</color>
+    <color name="system_outline">#79747E</color>
+    <color name="system_outline_variant">#CAC4D0</color>
+
+    <color name="system_secondary_container">#E8DEF8</color>
+    <color name="expense_color">#CF222E</color>
+    <!-- Transaction colors -->
+    <color name="income_color">#1B873A</color>
+    <color name="translucent">#33FFFFFF</color>
+
+    <!-- Chart colors -->
+    <color name="chart_food">#FF6B6B</color>
+    <color name="chart_transport">#4ECDC4</color>
+    <color name="chart_entertainment">#45B7D1</color>
+    <color name="chart_shopping">#96CEB4</color>
+    <color name="chart_utilities">#FFBE0B</color>
+    <color name="chart_others">#9D4EDD</color>
+    <!-- System color mappings -->
+    <color name="system_primary">@color/md_theme_primary</color>
+    <color name="system_primary_container">@color/md_theme_primaryContainer</color>
+    <color name="system_on_primary_container">@color/md_theme_onPrimaryContainer</color>
+    <color name="system_neutral_background">@color/md_theme_background</color>
+    <color name="system_surface_container">@color/md_theme_surface</color>
+    <color name="system_on_surface">@color/md_theme_onSurface</color>
+
+</resources>

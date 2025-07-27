@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/dialog_background"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        android:background="@android:color/transparent"
+        android:padding="@dimen/spacing_large"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/typeTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            app:tabMode="fixed"
+            android:padding="4dp"
+            android:background="@drawable/tab_layout_border"
+
+            app:tabGravity="fill"
+            app:tabTextAppearance="@style/TextAppearance.Material3.LabelLarge"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/divider"
+            app:tabIndicatorFullWidth="false"
+            app:tabRippleColor="@color/chart_color_3"
+            style="@style/Widget.Material3.TabLayout.Secondary">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expense"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#1AFFFFFF"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/white"
+        app:cardCornerRadius="12dp"
+        style="@style/Widget.Material3.CardView.Elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:backgroundTint="@color/transparent"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_medium">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:boxStrokeColor="@color/white"
+                    app:helperTextTextColor="@color/expense_red"
+                    app:errorTextColor="@color/expense_red"
+                    app:errorIconTint="@color/expense_red"
+
+                    app:startIconTint="@color/white"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAmount"
+                        android:hint="@string/amount"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:drawableStart="@drawable/ic_currency"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textCursorDrawable="@null"
+
+                        android:inputType="numberDecimal"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:hint="@string/description"
+
+                    app:helperTextTextColor="@color/expense_red"
+                    app:errorTextColor="@color/expense_red"
+                    app:errorIconTint="@color/expense_red"
+
+                    app:hintTextColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:boxStrokeColor="@color/white"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="100"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDescription"
+                        android:layout_width="match_parent"
+                        android:textCursorDrawable="@null"
+
+                        app:cursorColor="@color/white"
+                        app:boxStrokeColor="@color/white"
+                        app:hintTextColor="@color/white"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:minLines="2"
+                        android:gravity="top"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+
+                    app:endIconMode="dropdown_menu"
+                    app:cursorColor="@color/white"
+                    app:boxStrokeColor="@color/white"
+                    app:hintTextColor="@color/white"
+                    android:textColor="@color/white"
+                    app:helperTextTextColor="@color/expense_red"
+                    app:errorTextColor="@color/expense_red"
+                    app:errorIconTint="@color/expense_red"
+
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/spinnerCategory"
+                        android:hint="@string/category"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                app:rippleColor="@color/chart_color_3"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:text="@string/cancel"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+           android:backgroundTint="#FFB800"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:text="@string/save"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
