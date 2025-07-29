@@ -102,7 +102,7 @@
             android:layout_gravity="center_vertical"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="-$24.99"
+            tools:text="-₹24.99"
             tools:textColor="@color/expense_red"/>
 
     </LinearLayout>

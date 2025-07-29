@@ -1,8 +1,10 @@
 package com.example.walletking.ui.main
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.example.walletking.R
@@ -33,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         viewModel = ViewModelProvider(this)[FinanceViewModel::class.java]
-
+        setUpToolbarWithDrawer()
+        setUpNavigationDrawer()
         setupViewPager()
         setupFab()
     }
@@ -59,6 +62,51 @@ class MainActivity : AppCompatActivity() {
                 else -> getString(R.string.tab_categories)
             }
         }.attach()
+    }
+    private fun setUpToolbarWithDrawer() {
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        // Enable hamburger menu
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu)
+    }
+
+    private fun setUpNavigationDrawer() {
+        binding.navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_dashboard -> {
+                    // Navigate to dashboard
+                    binding.viewPager.currentItem = 0
+                }
+                R.id.nav_transactions -> {
+                    // Navigate to transactions
+                    binding.viewPager.currentItem = 1
+                }
+                R.id.nav_categories -> {
+                    // Navigate to categories
+                    binding.viewPager.currentItem = 2
+                }
+                R.id.nav_settings -> {
+                    // Open settings
+                }
+                R.id.nav_about -> {
+                    // Show about dialog
+                }
+            }
+            binding.drawerLayout.closeDrawers()
+            true
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                binding.drawerLayout.openDrawer(GravityCompat.START)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun setupFab() {

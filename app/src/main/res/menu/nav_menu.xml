@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/tab_Dashboard" />
+
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/ic_transaction"
+            android:title="@string/tab_transactions" />
+
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_categories"
+            android:title="@string/tab_Categories" />
+
+        <item
+            android:id="@+id/nav_analytics"
+            android:icon="@mipmap/ic_analytics"
+            android:title="@string/analytics" />
+
+    </group>
+
+    <item android:title="@string/account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile"
+                android:title="@string/profile" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_setting"
+                android:title="@string/settings" />
+
+            <item
+                android:id="@+id/nav_backup"
+                android:icon="@drawable/ic_backup_sync"
+                android:title="@string/backup_sync" />
+        </menu>
+    </item>
+
+    <item android:title="@string/support">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/help_support" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/baseline_info_24"
+                android:title="@string/about" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

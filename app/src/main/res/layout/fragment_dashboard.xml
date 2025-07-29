@@ -50,7 +50,7 @@
                     android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
                     android:textColor="@color/primary_light"
                     android:textStyle="bold"
-                    tools:text="$24,562.00"/>
+                    tools:text="₹24,562.00"/>
 
                 <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
@@ -91,7 +91,7 @@ android:gravity="center"
                             android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
                             android:textColor="@color/income_green"
                             android:textStyle="bold"
-                            tools:text="+$32,450.00"/>
+                            tools:text="+₹32,450.00"/>
                     </LinearLayout>
 
                     <!-- Vertical Divider -->
@@ -127,7 +127,7 @@ android:gravity="center"
                             android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
                             android:textColor="@color/expense_color"
                             android:textStyle="bold"
-                            tools:text="-$7,888.00"/>
+                            tools:text="-₹7,888.00"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -197,7 +197,7 @@ android:gravity="center"
                             android:layout_height="wrap_content"
                             android:textColor="@color/primary_light"
                             android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
-                            tools:text="$500.00"/>
+                            tools:text="₹500.00"/>
                     </LinearLayout>
 
                     <!-- Average Daily Expense -->
@@ -223,7 +223,7 @@ android:gravity="center"
                             android:layout_height="wrap_content"
                             android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
                             android:textColor="@color/primary_light"
-                            tools:text="$35.00" />
+                            tools:text="₹35.00" />
                     </LinearLayout>
 
                     <View

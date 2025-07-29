@@ -58,5 +58,27 @@
     <string name="error_select_category">please select a category\n</string>
     <string name="add_transaction">Add Transaction</string>
     <string name="add_transaction_description">Add a new transaction</string>
+    <string name="john_doe_example_com">john.doe@example.com</string>
+    <string name="john_doe">John Doe</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_logo_description">Wallet King Logo</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="menu">Menu</string>
+    <string name="tab_Dashboard">Dashboard</string>
+    <string name="tab_Transactions">Transactions</string>
+    <string name="tab_Categories">Categories</string>
+    <string name="add_transaction_nav">Add Transaction</string>
+    <string name="add_transaction_description_nav">Add new transaction</string>
+    <string name="analytics">Analytics</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="support">Support</string>
+    <string name="backup_sync"><![CDATA[Backup & Sync]]></string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
 
 </resources>

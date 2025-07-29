@@ -70,4 +70,8 @@
     <color name="system_surface_container">@color/md_theme_surface</color>
     <color name="system_on_surface">@color/md_theme_onSurface</color>
 
+    <color name="primary_color">#1976D2</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="text_color">#212121</color>
+
 </resources>
