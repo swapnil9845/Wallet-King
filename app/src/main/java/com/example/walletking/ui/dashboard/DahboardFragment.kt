@@ -29,7 +29,7 @@ class DashboardFragment : Fragment() {
 
     private val financeViewModel: FinanceViewModel by viewModels({ requireActivity() })
     private val dashboardViewModel: DashboardViewModel by viewModels()
-    private val currencyFormatter = NumberFormat.getCurrencyInstance(Locale.getDefault())
+    private val currencyFormatter = NumberFormat.getCurrencyInstance(Locale("en", "IN"))
 
     override fun onCreateView(
         inflater: LayoutInflater,

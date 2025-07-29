@@ -30,7 +30,7 @@ class TransactionAdapter(
     private val onUndoDelete: (Transaction) -> Unit
 ) : ListAdapter<Transaction, TransactionAdapter.TransactionViewHolder>(TransactionDiffCallback()) {
     private var recyclerView: RecyclerView? = null
-    private val itemsPendingRemoval = mutableSetOf<Transaction>()
+//    private val itemsPendingRemoval = mutableSetOf<Transaction>()
 
     //ListAdapter automates diffing between old and new lists using DiffUtil and helps refresh only the necessary items.
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransactionViewHolder {
@@ -60,7 +60,7 @@ class TransactionAdapter(
     ) : RecyclerView.ViewHolder(binding.root) {
 
         private val dateFormatter = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
-        private val currencyFormatter = NumberFormat.getCurrencyInstance()
+        private val currencyFormatter = NumberFormat.getCurrencyInstance(Locale("en", "IN"))
 
         init {
             binding.root.setOnClickListener {
